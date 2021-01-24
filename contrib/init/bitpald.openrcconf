@@ -1,0 +1,33 @@
+# /etc/conf.d/bitpald: config file for /etc/init.d/bitpald
+
+# Config file location
+#BITPALD_CONFIGFILE="/etc/bitpal/bitpal.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITPALD_USER)
+#BITPALD_PIDDIR="/var/run/bitpald"
+
+# What filename to give the pidfile
+#BITPALD_PIDFILE="${BITPALD_PIDDIR}/bitpald.pid"
+
+# Where to write bitpald data (be mindful that the blockchain is large)
+#BITPALD_DATADIR="/var/lib/bitpald"
+
+# User and group to own bitpald process
+#BITPALD_USER="bitpal"
+#BITPALD_GROUP="bitpal"
+
+# Path to bitpald executable
+#BITPALD_BIN="/usr/bin/bitpald"
+
+# Nice value to run bitpald under
+#BITPALD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITPALD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitpald to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITPALD_SIGTERM_TIMEOUT=600
