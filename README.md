@@ -1,7 +1,7 @@
 BitPal Core integration/staging tree
 =====================================
 
-https://bitpal.com
+https://bit-pal.net
 
 What is BitPal?
 ----------------
